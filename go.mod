@@ -2,7 +2,7 @@ module github.com/xyproto/png2go
 
 go 1.24.2
 
-require github.com/xyproto/carveimg v1.4.7
+require github.com/xyproto/carveimg v1.4.8
 
 require (
 	github.com/davecgh/go-spew v1.1.1 // indirect

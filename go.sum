@@ -23,6 +23,8 @@ github.com/xyproto/burnpal v1.0.0 h1:cwiMfJdQKRuTWbg6XjCjBNd7c0TLCpfbxLW5bQNzU+c
 github.com/xyproto/burnpal v1.0.0/go.mod h1:j3S/tDDOEkIChz0sWDqO3zXOgIjz/6nhuc+JrmZNLnA=
 github.com/xyproto/carveimg v1.4.7 h1:IA+f+BQJUUFWZS6+E7MLl0iwywnRGXTJnyn2j6f5aJM=
 github.com/xyproto/carveimg v1.4.7/go.mod h1:saVm3j78Q5awnjlh1JvLOt98vRhtBA5dGnsnZagFKMY=
+github.com/xyproto/carveimg v1.4.8 h1:dPpWTdBjI3r1owFROlSIjch4Y+M6Q0HFv6NZWKSr6Yg=
+github.com/xyproto/carveimg v1.4.8/go.mod h1:HDHnlXCkkm2zSZLvMHyrWCC1CMcjyOreNiral06TjTs=
 github.com/xyproto/env/v2 v2.5.3 h1:H/Fd1OAld+sPQrPKpAEkfwF3xn7eZiFys2QeH7c7oFE=
 github.com/xyproto/env/v2 v2.5.3/go.mod h1:F81ZEzu15s3TWUZJ1uzBl9iNeq9zcfHvxMkQJaLZUl0=
 github.com/xyproto/palgen v1.6.1 h1:TmVtbNZ6VAPzTBxFDFm0Fxk5Xw+NVdnl1xmJuvzFHsI=
