@@ -2,11 +2,14 @@ package main
 
 import (
 	"errors"
+	"fmt"
 	"image"
 	"log"
 
 	"github.com/xyproto/carveimg"
 )
+
+const imgfn = "img/kgs_screenshot1.png"
 
 // Load the given filename, return an image, the width, height and an error if there are issues
 func Load(filename string) (*image.NRGBA, int, int, error) {
@@ -27,7 +30,7 @@ func Load(filename string) (*image.NRGBA, int, int, error) {
 
 func main() {
 	// 1. Read in an image
-	img, w, h, err := Load("board.png")
+	img, w, h, err := Load(imgfn)
 	if err != nil {
 		log.Fatalln(err)
 	}
@@ -35,6 +38,8 @@ func main() {
 	_ = w
 	_ = h
 	_ = img
+
+	fmt.Printf("Loaded an %dx%d image.\n", w, h)
 
 	// 2. Find the X positions of all the lines
 	// 3. Find the Y positions of all the lines
