@@ -1,13 +1,15 @@
 package main
 
 import (
-	"fmt"
+	"errors"
+	"image"
+	"log"
 
 	"github.com/xyproto/carveimg"
 )
 
 // Load the given filename, return an image, the width, height and an error if there are issues
-func Load(filename) (image.Image, int, int, error) {
+func Load(filename string) (*image.NRGBA, int, int, error) {
 	img, err := carveimg.LoadImage(filename)
 	if err != nil {
 		return nil, 0, 0, err
@@ -20,7 +22,7 @@ func Load(filename) (image.Image, int, int, error) {
 	if imageWidth == 0 {
 		return nil, 0, 0, errors.New("the width of the given image is 0")
 	}
-	return img, imageWidth, imageHeight, nil
+	return img, int(imageWidth), int(imageHeight), nil
 }
 
 func main() {
@@ -29,6 +31,10 @@ func main() {
 	if err != nil {
 		log.Fatalln(err)
 	}
+
+	_ = w
+	_ = h
+	_ = img
 
 	// 2. Find the X positions of all the lines
 	// 3. Find the Y positions of all the lines

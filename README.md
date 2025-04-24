@@ -1,2 +1,5 @@
 # png2go
-Convert a series of PNG images to an SGF file
+
+Convert one or a series of PNG images to an SGF file.
+
+This is a work in progress!
